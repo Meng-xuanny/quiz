@@ -13,8 +13,8 @@ const Modal = () => {
       <div className="modal-content">
         <h2>Congrats!</h2>
         <p>
-          You answered {(correct / questions.length) * 100}% of questions
-          correctly
+          You answered {((correct / questions.length) * 100).toFixed(2)}% of
+          questions correctly
         </p>
         <button className="close-btn" onClick={closeModal}>
           play again
